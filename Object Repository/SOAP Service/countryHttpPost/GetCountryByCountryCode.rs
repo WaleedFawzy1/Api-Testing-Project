@@ -29,7 +29,7 @@
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint>http://www.webservicex.net/country.asmx</soapServiceEndpoint>
-   <soapServiceFunction>GetCountryByCountryCode</soapServiceFunction>
+   <soapServiceFunction>GetISD</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
