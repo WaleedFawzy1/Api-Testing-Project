@@ -71,6 +71,11 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 GlobalVariable.FIRST_NUM =   WS.getElementPropertyValue(response, 'AddIntegerResponse.AddIntegerResult')
 
-println 'First Number is '+ GlobalVariable.FIRST_NUM</verificationScript>
+println 'First Number is '+ GlobalVariable.FIRST_NUM
+
+
+WS.verifyResponseStatusCode(response, 200)
+
+assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
    <wsdlAddress>https://www.crcind.com/csp/samples/SOAP.Demo.CLS?WSDL=1</wsdlAddress>
 </WebServiceRequestEntity>

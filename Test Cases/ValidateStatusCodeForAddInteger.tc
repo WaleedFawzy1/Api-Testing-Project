@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ValidateStatusCodeForAddInteger</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d596bf11-cb80-406d-872b-abef6bfcd3e7</testCaseGuid>
+</TestCaseEntity>
