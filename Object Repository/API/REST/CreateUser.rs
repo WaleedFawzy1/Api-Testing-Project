@@ -7,7 +7,7 @@
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -25,7 +25,7 @@
       <webElementGuid>b0a9b7f1-6fdf-4d2a-baa6-c656ad082d7b</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.0.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>https://reqres.in/api/users</restUrl>
@@ -35,7 +35,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -54,6 +54,9 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.verifyResponseStatusCode(response, 201)
 
-assertThat(response.getStatusCode()).isEqualTo(201)</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(201)
+
+
+assertThat(response.getStatusCode()).isIn(Arrays.asList(200, 201, 202))</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

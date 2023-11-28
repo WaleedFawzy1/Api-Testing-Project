@@ -17,8 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('API/SOAP/AddInteger', [('num1') : GlobalVariable.FIRST_NUM]))
-WS.verifyResponseStatusCode(response, 200)
+def response = WS.sendRequest(findTestObject('API/REST/CreateUser'))
 
 
+WS.verifyResponseStatusCode(response, 201)
 

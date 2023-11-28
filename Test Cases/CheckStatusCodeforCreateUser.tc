@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CheckStatusCodeforCreateUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1c174f68-1df0-43f6-a38f-acdd7fd77811</testCaseGuid>
+</TestCaseEntity>
